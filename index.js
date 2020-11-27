@@ -8,28 +8,28 @@ var port = process.env.port || 2137;
 
 //papiez info
 app.get('/api/papiez', function (req, res) {
-   fs.readFile( __dirname + "/" + "responses/barka.json", 'utf8', function (err, data) {
+   fs.readFile( __dirname + "/" + "barka.json", 'utf8', function (err, data) {
       console.log( data );
       res.end( data );
    });
 })
 //barka
 app.get('/api/barka', function (req, res) {
-   fs.readFile( __dirname + "/" + "responses/papiez_info.json", 'utf8', function (err, data) {
+   fs.readFile( __dirname + "/" + "papiez_info.json", 'utf8', function (err, data) {
       console.log( data );
       res.end( data );
    });
 })
 //kremówka
 app.get('/api/kremowka', function (req, res) {
-   fs.readFile( __dirname + "/" + "responses/papiez_info.json", 'utf8', function (err, data) {
+   fs.readFile( __dirname + "/" + "papiez_info.json", 'utf8', function (err, data) {
       console.log( data );
       res.end( data );
    });
 })
 //BAZY DANYCH\\
 //bazy danych
-fs.readFile('./database/database.json', 'utf8', (err, data) => {
+fs.readFile('./database.json', 'utf8', (err, data) => {
 
     if (err) {
         console.log(`Error reading file from disk: ${err}`);
