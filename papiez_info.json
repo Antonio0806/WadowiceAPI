@@ -1,0 +1,10 @@
+{
+  "name" : "John",
+  "age" : 23,
+  "role" : [ "developer", "tester" ],
+  "address" : {
+    "city" : "Utrecht",
+    "street" : "Musicallaan",
+    "number" : 413
+  }  
+}
